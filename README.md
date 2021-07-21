@@ -152,6 +152,23 @@ curl --location --request PATCH 'http://django-prompt.centralindia.cloudapp.azur
     "message": "feedback request picked up successfully"
 }
 ```
+  
+<em>**If already picked up by some other editor**</em>
+  
+  ```
+  {
+    "message": "request already picked by other editor"
+}
+  
+  ```
+  
+<em>**if user is not in the assignee list**</em>
+  
+  ```
+  {
+    "message": "request can not be picked, you are not assignee of this feedback request"
+}
+  ```
 ---
 **4. Submit feedback**
 
@@ -179,6 +196,18 @@ curl --location --request POST 'http://django-prompt.centralindia.cloudapp.azure
     "message": "feedback submitted"
 }
 ```
+
+<em>**if not picked up by user or already pickedup by some other editor**</em>
+ 
+  ```
+  {
+    "errors": {
+        "non_field_errors": [
+            "request is not picked by you or might have picked by some other editor"
+        ]
+    }
+}
+  ```
 
 ---
 
