@@ -1,12 +1,12 @@
 ## FYI
-* django-app is deployed on **Microsoft Azure**
+* Django-app is deployed on **Microsoft Azure**
 * Base URL - > http://django-prompt.centralindia.cloudapp.azure.com
 * As discussed with Jordan, project is backend focused and front-end part is not implemented, instead test-cases are written to make sure API logic is correct and desired response is received
-* As API calls will not occur by front-end, few validations are added while picking up the request and submitting the feedback.
+* As APIs would not be called by front-end, few validations are added while picking up the request and submitting the feedback.
 
 ## API Contracts
 
-**1. get all feedback request available for user to pickup**
+**1. Get all feedback request available for user to pickup**
 
 **GET** <em> ```/api/feedback-request/```</em>
 
@@ -56,7 +56,7 @@ curl --location --request GET 'http://django-prompt.centralindia.cloudapp.azure.
 
 ---
 
-**2. get detailed feedback request**
+**2. Get detailed feedback request**
 
 **GET** <em>```/api/feedback-request/<pk>/```</em>
 
@@ -130,7 +130,7 @@ curl --location --request GET 'http://django-prompt.centralindia.cloudapp.azure.
 
 ---
 
-**3.pick up the feedback request.**
+**3. Pick up the feedback request.**
 
 **PATCH** <em>```/api/feedback-request/<pk>/```</em>
 
@@ -149,8 +149,7 @@ curl --location --request PATCH 'http://django-prompt.centralindia.cloudapp.azur
 
 ```
 {
-    "message": "feedback request picked up successfully",
-    "status": 200
+    "message": "feedback request picked up successfully"
 }
 ```
 ---
@@ -177,8 +176,7 @@ curl --location --request POST 'http://django-prompt.centralindia.cloudapp.azure
 
 ```
 {
-    "message": "feedback submitted",
-    "status": 200
+    "message": "feedback submitted"
 }
 ```
 
