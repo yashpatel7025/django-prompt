@@ -58,7 +58,7 @@ class FeedbackRequest(models.Model):
 		help_text='The essay being edited as part of the feedback request. For simplicity, we assume that a feedback' +
 		' request consists of only one essay.'
 	)
-	assigned_editors = models.ManyToManyField('project.User', related_name='assigned_feedback_requests', null=True, blank=True)
+	assigned_editors = models.ManyToManyField('project.User', related_name='assigned_feedback_requests', blank=True)
 	edited = models.BooleanField(
 		default=False,
 		help_text='If True, the request has been edited. Otherwise,' +
