@@ -14,7 +14,7 @@
 curl --location --request GET 'http://django-prompt.centralindia.cloudapp.azure.com/api/feedback-request/' \
 --header 'Connection: keep-alive' \
 --header 'Accept: application/json, text/plain, */*' \
---header 'X-CSRFTOKEN: 8cdQpClO5tSXOlP9ped18bwZHPIMjcfM78tDt24yLSk5Ar5F18uQ3ZeJgE6ZpdTr' \
+--header 'X-CSRFTOKEN: loX5291kpVZ8oR0pNXOsnZSpRDKr6ZN8fFKEFPzCD53FLL6XIkdUj2YaoSNRtXvr' \
 --header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \
 --header 'Referer: http://django-prompt.centralindia.cloudapp.azure.com/platform/' \
 --header 'Accept-Language: en-US,en;q=0.9' \
@@ -64,7 +64,7 @@ curl --location --request GET 'http://django-prompt.centralindia.cloudapp.azure.
 curl --location --request GET 'http://django-prompt.centralindia.cloudapp.azure.com/api/feedback-request/7' \
 --header 'Connection: keep-alive' \
 --header 'Accept: application/json, text/plain, */*' \
---header 'X-CSRFTOKEN: 8cdQpClO5tSXOlP9ped18bwZHPIMjcfM78tDt24yLSk5Ar5F18uQ3ZeJgE6ZpdTr' \
+--header 'X-CSRFTOKEN: loX5291kpVZ8oR0pNXOsnZSpRDKr6ZN8fFKEFPzCD53FLL6XIkdUj2YaoSNRtXvr' \
 --header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \
 --header 'Referer: http://django-prompt.centralindia.cloudapp.azure.com/platform/' \
 --header 'Accept-Language: en-US,en;q=0.9' \
@@ -138,7 +138,7 @@ curl --location --request GET 'http://django-prompt.centralindia.cloudapp.azure.
 curl --location --request PATCH 'http://django-prompt.centralindia.cloudapp.azure.com/api/feedback-request/8/' \
 --header 'Connection: keep-alive' \
 --header 'Accept: application/json, text/plain, */*' \
---header 'X-CSRFTOKEN: 8cdQpClO5tSXOlP9ped18bwZHPIMjcfM78tDt24yLSk5Ar5F18uQ3ZeJgE6ZpdTr' \
+--header 'X-CSRFTOKEN: loX5291kpVZ8oR0pNXOsnZSpRDKr6ZN8fFKEFPzCD53FLL6XIkdUj2YaoSNRtXvr' \
 --header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \
 --header 'Referer: http://django-prompt.centralindia.cloudapp.azure.com/platform/' \
 --header 'Accept-Language: en-US,en;q=0.9' \
@@ -178,7 +178,7 @@ curl --location --request PATCH 'http://django-prompt.centralindia.cloudapp.azur
 curl --location --request POST 'http://django-prompt.centralindia.cloudapp.azure.com/api/feedback-request/comment/' \
 --header 'Connection: keep-alive' \
 --header 'Accept: application/json, text/plain, */*' \
---header 'X-CSRFTOKEN: 8cdQpClO5tSXOlP9ped18bwZHPIMjcfM78tDt24yLSk5Ar5F18uQ3ZeJgE6ZpdTr' \
+--header 'X-CSRFTOKEN: loX5291kpVZ8oR0pNXOsnZSpRDKr6ZN8fFKEFPzCD53FLL6XIkdUj2YaoSNRtXvr' \
 --header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \
 --header 'Referer: http://django-prompt.centralindia.cloudapp.azure.com/platform/' \
 --header 'Accept-Language: en-US,en;q=0.9' \
