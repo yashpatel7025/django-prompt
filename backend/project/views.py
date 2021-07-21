@@ -34,7 +34,7 @@ class FeedbackRequestViewSet(viewsets.GenericViewSet):
 			return response
 		feedback_request.picked_up_by = request.user
 		feedback_request.save()
-		return  Response({"message":"success"}, status=status.HTTP_200_OK)
+		return  Response({'message':'feedback request picked up successfully'}, status=status.HTTP_200_OK)
 
 
 class CommentView(views.APIView):
@@ -47,9 +47,9 @@ class CommentView(views.APIView):
 			comment = serializer.save()
 			comment.feedback_request.edited = True
 			comment.feedback_request.save()
-			return Response({"message":"feedback submitted"}, status=status.HTTP_200_OK)
+			return Response({'message':'feedback submitted'}, status=status.HTTP_200_OK)
 		else:
-			return Response({"errors": dict(serializer.errors.items())}, status=status.HTTP_400_BAD_REQUEST)
+			return Response({'errors': dict(serializer.errors.items())}, status=status.HTTP_400_BAD_REQUEST)
 
 
 class HomeView(views.APIView):

@@ -26,7 +26,7 @@ class FeedbackRequestManager:
 
 def is_valid_pickup_request(feedback_request: FeedbackRequest, request):
 	if not feedback_request.assigned_editors.filter(id=request.user.id).exists():
-		return (False, Response({"message": "request can not be picked, you are not assignee of this feedback request"}, status=status.HTTP_400_BAD_REQUEST))
+		return (False, Response({'message': 'request can not be picked, you are not assignee of this feedback request'}, status=status.HTTP_400_BAD_REQUEST))
 	if feedback_request.picked_up_by:
-		return  (False, Response({"message": "request already picked by other editor"}, status=status.HTTP_400_BAD_REQUEST))
+		return  (False, Response({'message': 'request already picked by other editor'}, status=status.HTTP_400_BAD_REQUEST))
 	return (True, None)

@@ -34,7 +34,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'lxl9$7&h9k@-e9lwu5o%2l^f=pm)9j=b%h-am_^ntwa*phsoe+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
 	'django_extensions',
-	'project',
+	'project'
 ]
 
 MIDDLEWARE = [
